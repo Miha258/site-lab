@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Будівельні матеріали - Спеціалісти</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Будівельні матеріали</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="specialists.html">Спеціалісти</a></li>
+                <li><a href="products.html">Товари</a></li>
+                <li><a href="stores.html">Наші магазини</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Наші Спеціалісти</h2>
+        <p>Ми маємо команду висококваліфікованих спеціалістів, готових допомогти вам з вибором матеріалів та консультаціями.</p>
+        
+        <section class="specialists">
+            <article class="specialist">
+                <img src="https://cdn.chesno.org/web/media/thumbs/persons/%D0%A7%D1%83%D0%B1%D0%B8%D1%80%D0%BA%D0%BE.jpg.200x200_q85_crop.jpg" alt="Іван Іванов">
+                <h3>Іван Іванов</h3>
+                <p>Іван є експертом з бетонних конструкцій з понад 10-річним досвідом. Його професійні поради допоможуть вам у виборі найкращих матеріалів для будь-якого проекту.</p>
+                <button class="contact-btn">Зв'язатися</button>
+            </article>
+            <article class="specialist">
+                <img src="https://static.rada.gov.ua/dep_img9/es1.jpg" alt="Петро Петров">
+                <h3>Петро Петров</h3>
+                <p>Петро спеціалізується на оздоблювальних матеріалах. Його знання допоможуть вам обрати найкращі фарби, шпалери та інші матеріали для вашого ремонту.</p>
+                <button class="contact-btn">Зв'язатися</button>
+            </article>
+            <article class="specialist">
+                <img src="https://www.arbitralwomen.org/wp-content/uploads/2020/04/Olena-Perepelynska-news-300x187.jpg" alt="Олена Оленова">
+                <h3>Олена Оленова</h3>
+                <p>Олена є фахівцем з екологічних будівельних матеріалів. Вона допоможе вам зробити ваш будинок екологічно чистим та безпечним для здоров'я.</p>
+                <button class="contact-btn">Зв'язатися</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Будівельні матеріали. Всі права захищено.</p>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Зв'язатися зі спеціалістом</h2>
+            <form>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
